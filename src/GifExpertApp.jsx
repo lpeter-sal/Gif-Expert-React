@@ -16,7 +16,7 @@ export const GifExpertApp = () => {
     }
 
 
-    const ResetCategory = () => {
+    const resetCategory = () => {
         setCategories([]);
     }
 
@@ -30,7 +30,7 @@ export const GifExpertApp = () => {
             onNewCategory={ (event) => onAddCategory(event)}
         />
 
-        <button className='btn primary' onClick={ResetCategory}>Reset</button>
+        <button className='btn primary' onClick={resetCategory}>Reset</button>
 
         { 
             categories.map( (category) => (
